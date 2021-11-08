@@ -4,173 +4,226 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="assets/img/nut.png" type="image/png" sizes="16x16">
      <title>NO NUT</title>
-     <style>
-          *{
-               font-family: Arial, Helvetica, sans-serif;
-          }
-
-          body{
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               height: 90vh;
-
-          }
-
-          table, tr, td, th{
-               border-collapse: collapse;
-               color: black;
-               border: 1px solid;
-               padding: 1em;
-          }
-
-          .flex{
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-          }
-
-          button{
-               cursor: pointer;
-               margin-top: 2em;
-               padding: 10px;
-               width: 50%;
-               font-size: larger;
-               border-radius: 50px;
-          }
-
-     </style>
+     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
      <div class="flex">
-          <h1>NO NUT COUNT</h1>
-          <table border="1px solid">
+    <table id="title" >        
+        <tr><th id="nut">NO NUT COUNT</th></tr>
+    </table>
+    <table>
 
-               <tr>
-                    <th>DAY 1</th>
-                    <th>DAY 2</th>
-                    <th>DAY 3</th>
-                    <th>DAY 4</th>
-                    <th>DAY 5</th>
-                    <th>DAY 6</th>
-                    <th>DAY 7</th>
-               </tr>
-               <tr>
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-               </tr>         
-               <tr>
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-               </tr>         
-               <tr>
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-               </tr>         
-               <tr>
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-                    <td>
-                        <input type="checkbox" id="checkbox" name="checkbox" >
-                    </td>           
-               </tr>         
-          </table>  
-          <button type="button" onclick="save()">save</button> 
+        <tr>
+                <td>
+                    <h3 >DAY 1</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 2</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 3</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 4</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 5</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 6</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 7</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                                                
+        </tr>       
+        <tr>
+                <td>
+                    <h3 >DAY 8</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 9</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 10</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 11</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 12</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 13</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 14</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                                                
+        </tr>       
+        <tr>
+                <td>
+                    <h3 >DAY 15</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 16</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 17</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 18</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 19</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 20</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 21</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                                                
+        </tr>       
+        <tr>
+                <td>
+                    <h3 >DAY 22</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 23</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 24</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 25</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 26</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 27</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                            
+                <td>
+                    <h3>DAY 28</h3>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NUT</label><br>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">NO NUT</label>
+                </td>                                                
+        </tr>       
+            
+    </table>
      </div>
-<script>
-     function save() {	
-          const checkbox = document.getElementById("checkbox");
-          localStorage.setItem("checkbox", checkbox.checked);	
-     }
-     
-     //for loading
-     const checked = JSON.parse(localStorage.getItem("checkbox"));
-     document.getElementById("checkbox").checked = checked;
-     
-     //on console log
-     checkbox.addEventListener('change', function() {
-          if (this.checked) {
-               console.log("Checkbox is checked..");
-          } else {
-               console.log("Checkbox is not checked..");
-          }
-     });
-</script>
-     
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/save.js"></script>     
 </body>
 </html>
