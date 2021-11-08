@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>NO NUT</title>
+     <style>
+          *{
+               font-family: Arial, Helvetica, sans-serif;
+          }
+
+          body{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 90vh;
+
+          }
+
+          table, tr, td, th{
+               border-collapse: collapse;
+               color: black;
+               border: 1px solid;
+               padding: 1em;
+          }
+
+          .flex{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+          }
+
+          button{
+               cursor: pointer;
+               margin-top: 2em;
+               padding: 10px;
+               width: 50%;
+               font-size: larger;
+               border-radius: 50px;
+          }
+
+     </style>
+</head>
+
+<body>
+     <div class="flex">
+          <h1>NO NUT COUNT</h1>
+          <table border="1px solid">
+
+               <tr>
+                    <th>DAY 1</th>
+                    <th>DAY 2</th>
+                    <th>DAY 3</th>
+                    <th>DAY 4</th>
+                    <th>DAY 5</th>
+                    <th>DAY 6</th>
+                    <th>DAY 7</th>
+               </tr>
+               <tr>
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+               </tr>         
+               <tr>
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+               </tr>         
+               <tr>
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+               </tr>         
+               <tr>
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+                    <td>
+                        <input type="checkbox" id="checkbox" name="checkbox" >
+                    </td>           
+               </tr>         
+          </table>  
+          <button type="button" onclick="save()">save</button> 
+     </div>
+<script>
+     function save() {	
+          const checkbox = document.getElementById("checkbox");
+          localStorage.setItem("checkbox", checkbox.checked);	
+     }
+     
+     //for loading
+     const checked = JSON.parse(localStorage.getItem("checkbox"));
+     document.getElementById("checkbox").checked = checked;
+     
+     //on console log
+     checkbox.addEventListener('change', function() {
+          if (this.checked) {
+               console.log("Checkbox is checked..");
+          } else {
+               console.log("Checkbox is not checked..");
+          }
+     });
+</script>
+     
+</body>
+</html>
